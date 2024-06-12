@@ -1,0 +1,29 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="Project_Lab_PSD.Master_Page.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>
+        WebPSD
+    </title>
+    
+</head>
+<body>
+    <form id="form1" runat="server">
+
+        <div class="nav">
+            <asp:Button OnClick="btnHome_click" ID="btnHome" runat="server" Text="Home" />
+            <asp:Button OnClick="btnOrder_click" ID="btnOrder" runat="server" Text="Order Supplement" />
+            <asp:Button OnClick="btnHistory_click" ID= "btnHistory" runat="server" Text="History" />
+            <asp:Button OnClick="btnProfile_click" ID="btnProfile" runat="server" Text="Profile" />
+        </div>
+
+
+        <div>
+            <asp:ContentPlaceHolder ID="contentBody" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
