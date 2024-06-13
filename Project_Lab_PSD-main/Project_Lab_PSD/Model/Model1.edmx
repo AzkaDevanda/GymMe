@@ -246,7 +246,7 @@ warning 6002: The table/view 'C:\USERS\AZKA DEVANDA\ONEDRIVE - BINA NUSANTARA\SE
           <Property Name="TransactionID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="UserId" Type="Int32" />
           <Property Name="TransactionDate" Type="DateTime" Precision="0" />
-          <Property Name="Status" Type="Binary" MaxLength="50" FixedLength="false" />
+          <Property Name="Status" Type="String" />
           <NavigationProperty Name="MsUser" Relationship="Self.FK_TransaactionHeader_ToMsUser" FromRole="TransaactionHeader" ToRole="MsUser" />
           <NavigationProperty Name="TransactionDetails" Relationship="Self.FK_TransactionDetail_ToMsTransactionHeader" FromRole="TransaactionHeader" ToRole="TransactionDetail" />
         </EntityType>
